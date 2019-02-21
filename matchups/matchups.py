@@ -6,7 +6,7 @@ import pandas as pd
 from paramtools.parameters import Parameters
 from marshmallow import ValidationError
 
-from matchups.utils import (CURRENT_PATH, renamedf, pdf_to_clean_html)
+from matchups.utils import (renamedf, pdf_to_clean_html)
 
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 
