@@ -11,9 +11,12 @@ from matchups.utils import (renamedf, pdf_to_clean_html)
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 
+# class MatchupsParams(Parameters):
+#     schema = os.path.join(CURRENT_PATH, "schema.json")
+#     defaults = os.path.join(CURRENT_PATH, "defaults.json")
 class MatchupsParams(Parameters):
-    schema = os.path.join(CURRENT_PATH, "schema.json")
-    defaults = os.path.join(CURRENT_PATH, "defaults.json")
+    schema = os.path.join( os.getcwd(), "matchups", "schema.json" )
+    defaults = os.path.join( os.getcwd(), "matchups", "defaults.json" )
 
 
 def get_inputs(use_full_data=True):
